@@ -30,7 +30,7 @@ attr_reader :name, :roster, :i
   
   
   def sort
-    roster.each_value {|value| value.sort}
+    roster.each_value(&:sort!)
   end
   
 end
