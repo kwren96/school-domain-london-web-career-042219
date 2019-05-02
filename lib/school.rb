@@ -13,7 +13,10 @@ attr_reader :name, :roster, :i
     roster.include?(student_grade)
   end
   
-  def new_grade
+  def new_grade(student_grade)
+    if has_grade?(student_grade) == false
+      roster[grade] = 
+  end 
   
   def add_student(student_name, student_grade)
     if @roster.include?(student_grade)
