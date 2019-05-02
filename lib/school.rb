@@ -30,7 +30,7 @@ attr_reader :name, :roster, :i
   
   
   def sort
-    roster.map {|
+    roster.map {|key, value| value.
   end
   
 end
