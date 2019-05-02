@@ -13,13 +13,12 @@ attr_reader :name, :roster, :i
     roster.include?(student_grade)
   end
   
-  def new_grade(:student_grade, :student_name)
-    if has_grade?(student_grade) == false
+  def new_grade(student_grade)
       roster[student_grade] = []
-      roster[student_grade] << student_name
   end 
   
   def add_student(student_name, student_grade)
+    if has_grade?(student_grade) == false
     has_grade(student_grade)
     new_grade(student_grade)
     
