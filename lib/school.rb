@@ -9,6 +9,12 @@ attr_reader :name, :roster, :i
     @roster = {}
   end
   
+  def has_grade?(grade)
+    
+  end
+  
+  def new_grade
+  
   def add_student(student_name, student_grade)
     if @roster.include?(student_grade)
     @i = roster[student_grade].length
