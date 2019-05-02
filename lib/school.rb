@@ -9,8 +9,8 @@ attr_reader :name, :roster, :i
     @roster = {}
   end
   
-  def has_grade?(grade)
-    
+  def has_grade?(student_grade)
+    roster.include?(student_grade)
   end
   
   def new_grade
